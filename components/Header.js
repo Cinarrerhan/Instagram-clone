@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { SearchIcon, PlusCircleIcon } from "@heroicons/react/outline";
 import { HomeIcon } from "@heroicons/react/solid";
@@ -6,7 +7,7 @@ import React from "react";
 function Header() {
   return (
     <div>
-      <div className="flex items-center justify-between max-w-6xl">
+      <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
         {/*Left */}
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">
           <Image
@@ -43,6 +44,12 @@ function Header() {
 
         <div className="flex space-x-4 items-center">
           <HomeIcon className="hidden md:inline-flex h-6 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out" />
+          <PlusCircleIcon className="h-6 cursor-pointer hover:scale-125 transition-tranform duration-200 ease-out" />
+          <img
+            src="https://avatars.githubusercontent.com/u/36031081?v=4"
+            alt="user-image"
+            className="h-10 rounded-full cursor-pointer"
+          />
         </div>
       </div>
     </div>
