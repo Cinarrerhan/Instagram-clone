@@ -8,7 +8,9 @@ function Header() {
   return (
     <div className="shadow-sm border-b sticky top-0 bg-white z-30">
       <div className="flex items-center justify-between max-w-6xl mx-4 xl:mx-auto">
+
         {/*Left */}
+        
         <div className="cursor-pointer h-24 w-24 relative hidden lg:inline-grid">
           <Image
             src="http://www.jennexplores.com/wp-content/uploads/2015/09/Instagram_logo_black.png"
@@ -30,6 +32,7 @@ function Header() {
         </div>
 
         {/*Middle */}
+
         <div className="relative mt-1">
           <div className="absolute top-2 left-2">
             <SearchIcon className="h-5 text-gray-500" />
@@ -40,6 +43,7 @@ function Header() {
             className="bg-gray-50 pl-10 border-gray-500 text-sm focus:ring-black focus:border-black rounded-md"
           />
         </div>
+
         {/*Right */}
 
         <div className="flex space-x-4 items-center">
